@@ -1,13 +1,33 @@
+Pipeline approach
+
 ![Untitled Diagram-4](https://user-images.githubusercontent.com/44913260/120380793-e8ae3480-c321-11eb-83ae-a763d620cd2d.png)
 
+Creating a version control system using CodeCommit.
+![image](https://user-images.githubusercontent.com/44913260/120382881-78ed7900-c324-11eb-8ee7-356471a5d68f.png)
+The buildspec.yml file needs to be included in the repository as well as the dockerfiles. Buildspec.yml will be required by CodeBuild as input.
+
+Create a CodeBuild project
+
+![image](https://user-images.githubusercontent.com/44913260/120383388-1d6fbb00-c325-11eb-9c7d-2042227e7a7b.png)
+
+Specify the previously created CodeCommit repository as source.
+
+Initial steps:
+Execute the general.sh file in the aws cli.
+This will create an ECR repository, an ECS service and an ECS task.
+
+After that we can create the CodePipeline using the previously created services.
 
 
 
+Setting up CodePipeline
+![image](https://user-images.githubusercontent.com/44913260/120381246-7ab63d00-c322-11eb-8f80-218d4429c3da.png)
 
-![image](https://user-images.githubusercontent.com/44913260/120378592-eac2c400-c31e-11eb-9651-d03540394f52.png)
+Link the CodeBuild project
 
-Image from [AWS trainining material](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-ecs-ecr-codedeploy.html#tutorials-ecs-ecr-codedeploy-deployment)
+![image](https://user-images.githubusercontent.com/44913260/120381720-18aa0780-c323-11eb-9eee-07b9e90d60fd.png)
 
-![image](https://user-images.githubusercontent.com/44913260/120378620-f1e9d200-c31e-11eb-98d9-5b7b36f5e3f1.png)
+Choose the existing ECS cluster
 
-Image from [AWS trainining material](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-ecs-ecr-codedeploy.html#tutorials-ecs-ecr-codedeploy-deployment)
+![image](https://user-images.githubusercontent.com/44913260/120381835-3f683e00-c323-11eb-906e-399cd2bee240.png)
+
