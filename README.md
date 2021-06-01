@@ -1,12 +1,12 @@
-Pipeline approach
+# Pipeline approach
 
 ![Untitled Diagram-4](https://user-images.githubusercontent.com/44913260/120380793-e8ae3480-c321-11eb-83ae-a763d620cd2d.png)
 
-Creating a version control system using CodeCommit.
+## Creating a version control system using CodeCommit.
 ![image](https://user-images.githubusercontent.com/44913260/120382881-78ed7900-c324-11eb-8ee7-356471a5d68f.png)
 The buildspec.yml file needs to be included in the repository as well as the dockerfiles. Buildspec.yml will be required by CodeBuild as input.
 
-Create a CodeBuild project
+## Create a CodeBuild project
 
 ![image](https://user-images.githubusercontent.com/44913260/120383388-1d6fbb00-c325-11eb-9c7d-2042227e7a7b.png)
 
@@ -20,7 +20,7 @@ After that we can create the CodePipeline using the previously created services.
 
 
 
-Setting up CodePipeline
+## Setting up CodePipeline
 ![image](https://user-images.githubusercontent.com/44913260/120381246-7ab63d00-c322-11eb-8f80-218d4429c3da.png)
 
 Link the CodeBuild project
