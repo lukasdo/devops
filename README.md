@@ -1,4 +1,4 @@
-# Pipeline approach
+# Pipeline approach using AWS ( University project )
 
 ![Untitled Diagram-4](https://user-images.githubusercontent.com/44913260/120380793-e8ae3480-c321-11eb-83ae-a763d620cd2d.png)
 
